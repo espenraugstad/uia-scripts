@@ -6,13 +6,14 @@
 // @author       Espen Raugstad
 // @match        https://uia.instructure.com/courses/*/external_tools/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instructure.com
+// @updateURL    https://github.com/espenraugstad/uia-scripts/raw/refs/heads/main/scripts/exit_smartdesigner.user.js
+// @downloadURL  https://github.com/espenraugstad/uia-scripts/raw/refs/heads/main/scripts/exit_smartdesigner.user.js
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    // Your code here...
     // Breadcrumbs
     const bc = document.querySelector(".ic-app-crumbs");
 

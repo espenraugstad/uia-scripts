@@ -1,17 +1,48 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import ScriptList from "../components/ScriptList.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <main>
+    <section class="intro">
+      <h1>User scripts and Tampermonkey</h1>
+      <p>
+        A user script is a program for modifying web pages. On this page you
+        will find a collection of such programs written in JavaScript, that I
+        have found useful in my work here at the <a
+          href="https://www.uia.no/english/index.html"
+          target="_blank">University of Agder (UiA)</a
+        >.
+      </p>
+      <p>
+        In order to use a user script, a browser extension is required. The
+        scripts here are written using the extension Tampermonkey. You can <a
+          href="https://www.tampermonkey.net/"
+          target="_blank">visit the Tampermonkey home page</a
+        > where you will find instructions on how to install it for your browser.
+      </p>
+      <p>
+        In order to install a script, first locate it in the list below. Then
+        you click the title to open the page for that script. Once you are on
+        the page, you can read more about it, and there will also be a link at
+        the top to install it. When you click the install link, you will
+        automatically be prompted to install it. Just confirm the installation,
+        and you're ready to go!
+      </p>
+    </section>
+
+    <ScriptList />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 2rem;
+  }
+
+  .intro{
+	max-width: 800px;
+	margin: 0 auto;
+  }
+</style>

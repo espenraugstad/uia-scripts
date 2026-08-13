@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import ScriptCard from "./ScriptCard.astro";
+
+const allScripts = await getCollection("scripts");
+
+// Sort scripts alphabetically by title
+const sortedScripts = allScripts.sort((a,b) => {
+    if(a.data.title < b.data.title){
+        return -1;
+    } else {
+        return 1;
+    }
+})
+console.log(sortedScripts);
+---
+
+<section>
+    {
+        sortedScripts.map((script) => (
+            <ScriptCard script={script} />
+        ))
+    }
+</section>

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Simple test
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.11
 // @description  Tests
 // @author       Espen Raugstad
 // @match        https://www.vg.no

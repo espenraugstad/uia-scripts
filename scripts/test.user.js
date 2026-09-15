@@ -5,14 +5,14 @@
 // @description  Tests
 // @author       Espen Raugstad
 // @match        https://www.vg.no
-// @updateURL    
-// @downloadURL  
+// @updateURL    https://github.com/espenraugstad/uia-scripts/raw/refs/heads/main/scripts/test.user.js
+// @downloadURL  https://github.com/espenraugstad/uia-scripts/raw/refs/heads/main/scripts/test.user.js
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    console.log("******__TEST, BABY__******");
+    console.log("******__SIMPLE TEST******");
 
 })();

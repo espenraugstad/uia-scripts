@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Exit Smartdesigner
 // @namespace    http://tampermonkey.net/
-// @version      2025-07-29
+// @version      0.1
 // @description  Back to modules button when in SmartDesigner
 // @author       Espen Raugstad
 // @match        https://uia.instructure.com/courses/*/external_tools/*

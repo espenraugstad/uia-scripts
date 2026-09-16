@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         Move Student View
 // @namespace    http://tampermonkey.net/
-// @version      2025-04-10
+// @version      0.1
 // @description  Reposition the "Student View" bar
 // @author       Espen Raugstad
 // @match        https://uia.instructure.com/courses/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instructure.com
+// @updateURL    https://github.com/espenraugstad/uia-scripts/raw/refs/heads/main/scripts/move_student_view.user.js
+// @downloadURL  https://github.com/espenraugstad/uia-scripts/raw/refs/heads/main/scripts/move_student_view.user.js
 // @grant        none
 // ==/UserScript==
 

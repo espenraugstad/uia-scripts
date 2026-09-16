@@ -14,10 +14,21 @@ const sortedScripts = allScripts.sort((a,b) => {
 })
 ---
 
-<section>
+<section class="scripts">
     {
         sortedScripts.map((script) => (
             <ScriptCard script={script} />
         ))
     }
 </section>
+
+<style>
+    .scripts{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+        max-width: 800px;
+        margin-inline: auto;
+    }
+</style>

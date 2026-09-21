@@ -1,0 +1,20 @@
+---
+title: "Empty Canvas Element"
+description: "Mark empty HTML-elements in Canvas pages"
+tags: ["canvas"]
+---
+import DownloadButton from "../../components/DownloadButton.astro";
+import Figure from "../../components/Figure.astro";
+import screenshot from "../assets/empty_canvas_element.png";
+
+# Empty Canvas Element
+
+<DownloadButton url="https://github.com/espenraugstad/uia-scripts/raw/refs/heads/main/scripts/canvas_empty_element.user.js" />
+
+<hr />
+
+While this script is active, it will look for empty HTML-elements on Canvas pages. If it finds an empty element, it will be styled with a red, square border, as shown on the screenshot below.
+
+<Figure alt="Screenshot of the exit button" src={screenshot} cap="Screenshot of an empty element on a Canvas page being marked with a red square." />
+
+Note that some element are intentionally intended to be empty. This may be div-elements that are used for dividers, or elements that have yet to have some content. Having this script turned on will not affect the actual page content for others, and turning it off and reloading the page will no longer show the empty elements (beyond any styling said elements have on their own).
